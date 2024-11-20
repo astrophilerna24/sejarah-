@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Sejarah Soeharto dan Adam Malik</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #2C3E50;
+        }
+        h1 {
+            color: black;
+            text-align: center;
+           
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: white;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #2c3e50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: brown;
+        }
+        .image-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        img {
+            width: 150px;
+            height: auto;
+            border-radius: 5px;
+        }
+        
+        #home {
+    text-align: center;
+    padding: 50px 0;
+}
+
+#home h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#home p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Button styling */
+ .button {
+        display: inline-block;
+        padding: 10px 30px;
+        font-size: 1rem;
+        color: black;
+        background-color: white;
+        border: none;
+        border-radius: 6px; /* Sudut melengkung tombol */
+        text-decoration: none; /* Menghapus garis bawah */
+        transition: background-color 0.3s ease; /* Efek transisi */
+        font-size: 18px;
+        
+    }
+ /*   Styling untuk video background */
+#background-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    background-size: cover;
+}
+
+/* Overlay untuk teks di atas video */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* efek gelap di atas video */
+    z-index: 1;
+
+    .button:hover {
+        background-color: grey; /* Warna tombol saat hover */
+        transform: scale(1.05);
+    }
+    </style>
+</head>
+<body>
+  
+      <!-- Menambahkan video background -->
+    <video autoplay muted loop id="background-video">
+        <source src="background/video.mp4" type="video/mp4">
+        Browser Anda tidak mendukung video.
+    </video>
+    <div class="container">
+        <h1>Tokoh yang Terlibat</h1>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>Tempat Lahir</th>
+                    <th>Tanggal Lahir</th>
+                    <th>Jabatan</th>
+                    <th>Masa Jabatan</th>
+                    <th>Gambar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+             <td>B.J. Habibie</td>
+             <td>Pare Pare</td>
+             <td>25 Juni 1936</td>
+             <td>Presiden Republik Indonesia ke-1</td>
+             <td>1998 - 1999</td>
+             <td><img src="logo/bj.jpg" alt="tokoh"></
+                </tr>
+            </tbody>
+           <tbody>
+                <tr>
+             <td>Soeharto</td>
+             <td>Peneleh, Surabaya</td>
+             <td>6 Juni 1901</td>
+             <td>Presiden Republik Indonesia ke-2</td>
+             <td>1998 - 1999</td>
+             <td><img src="logo/soeharto.jpg" alt="tokoh"></
+                </tr>
+            </tbody>
+            
+            <tbody>
+                <tr>
+             <td>Muhammad Amien Rais</td>
+             <td>Surakarta</td>
+             <td>26 april 1944</td>
+             <td>Presiden Republik Indonesia ke-4</td>
+             <td>1999 - 2004</td>
+             <td><img src="logo/amien.jpg" alt="tokoh"></
+                </tr>
+            </tbody>
+            
+            <tbody>
+                <tr>
+             <td>Diah Permata Megawati Setiawati Sukarnoputri</td>
+             <td>Djokjakarta</td>
+             <td>23 januari 1947</td>
+             <td>Presiden Republik Indonesia ke-5</td>
+             <td>2001 - 2004</td>
+             <td><img src="logo/megawati.jpg" alt="tokoh"></
+                </tr>
+            </tbody>
+            
+        </table>
+        
+        <br>
+        
+        <button class="button">
+  <a href="index.html" class="button">Kembali ke Halaman Utama</a>
+      
+    </div>
+</body>
+</html>

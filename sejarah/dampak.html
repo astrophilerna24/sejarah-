@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dampak dalam Sejarah</title>
+    <style>
+      /* General Body Styling */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(
+            rgba(15, 15, 30, 0.85),
+            rgba(15, 15, 30, 0.85)
+          ),
+          url("https://source.unsplash.com/1600x900/?impact,history")
+            center/cover no-repeat;
+        color: #eaeaea;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      /* Section Styling */
+      .content-section {
+        width: 90%;
+        max-width: 800px;
+        text-align: center;
+        background-color: white;
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      /* Title Styling */
+      h1 {
+        font-size: 2.8rem;
+        margin-bottom: 20px;
+        color: #ffd700;
+      }
+
+      /* Paragraph Styling */
+      .content {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        text-align: justify;
+        margin-bottom: 30px;
+        color: black;
+      }
+
+      /* Video Background Styling */
+      #background-video {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        background-size: cover;
+      }
+
+      /* Button Container */
+      .buttons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      /* Button Styling */
+      .button {
+        display: inline-block;
+        padding: 12px 30px;
+        font-size: 1rem;
+        color: #fff;
+        background-color: #ff6347;
+        border: none;
+        border-radius: 6px;
+        text-decoration: none;
+        margin: 10px;
+        transition: all 0.3s ease;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .button:hover {
+        background-color: #ff4500;
+        transform: scale(1.05);
+        box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+      }
+
+      .button::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.3);
+        transform: skewX(-45deg);
+        transition: all 0.5s ease;
+        z-index: 0;
+      }
+
+      .button:hover::before {
+        left: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Video Background -->
+    <video autoplay muted loop id="background-video">
+      <source src="background/video.mp4" type="video/mp4" />
+      Browser Anda tidak mendukung video.
+    </video>
+
+    <section class="content-section">
+      <h1>Dampak dalam Sejarah</h1>
+      <div class="content"> 
+      <p>1.Bangunan Rusak: Kerusakan material sangat besar, dengan perkiraan kerugian mencapai Rp2,5 triliun. Bangunan-bangunan komersial, rumah-rumah, dan infrastruktur publik rusak parah akibat penjarahan dan pembakaran
+        </p>
+        <p> 2.Ribuan Korban Jiwa: Peristiwa Mei 1998 menelan ribuan korban jiwa, dengan total korban diperkirakan mencapai lebih dari 1.200 orang. Banyak dari korban ini meninggal karena terbakar atau terluka akibat penyerbuan dan pertumpahan darah.
+        </p>
+        <p>3.Jatuhnya Rezim Otoritarian: Peristiwa ini berakhir dengan jatuhnya rezim otoritarian Orde Baru yang dipimpin oleh Presiden Soeharto, yang telah berkuasa selama lebih dari 30 tahun. Pengunduran diri Soeharto pada 21 Mei 1998 membuka jalan bagi era reformasi di Indonesia.
+        </p>
+        <p>4.Kesadaran Masyarakat: Peristiwa ini meningkatkan kesadaran masyarakat terhadap hak asasi manusia, kebebasan berpendapat, dan partisipasi politik. Masyarakat menjadi lebih kritis terhadap kebijakan pemerintah dan lebih aktif dalam menyuarakan aspirasi mereka.</p>
+      </div>
+      <div class="buttons">
+        <a href="hasil.html" class="button">Kembali</a>
+        <a href="tokoh.html" class="button">Lanjut ke Halaman Tokoh</a>
+      </div>
+    </section>
+  </body>
+</html>

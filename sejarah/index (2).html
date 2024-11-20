@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Home yang Menarik</title>
+    <style>
+        /* Reset Style */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Style untuk Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #2C3E50;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            font-size: 20px;
+        }
+        .navbar a {
+            color: #ECF0F1;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .navbar a:hover {
+            color: #1ABC9C;
+        }
+
+        /* Style untuk Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://source.unsplash.com/1600x900/?nature,landscape') center/cover no-repeat;
+            color: #fff;
+            text-align: center;
+            padding: 50px 10px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 20px;
+        }
+        .hero h1 {
+           
+            font-size: 3em;
+            margin-bottom: 10px;
+            font-size: 55px;
+        }
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+        .hero button {
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #fff;
+            background-color: #1ABC9C;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .hero button:hover {
+            background-color: #16A085;
+        }
+
+        /* Style untuk Konten Utama */
+        .content {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        /* Style untuk Bagian */
+        section {
+            background: #f4f4f9;
+            padding: 40px;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        section:hover {
+            transform: translateY(-5px);
+        }
+        section h2 {
+            color: #2C3E50;
+            margin-bottom: 15px;
+        }
+        section p {
+            color: #34495E;
+            line-height: 1.6;
+        }
+
+        /* Style untuk Gambar di Hero */
+        .hero-images {
+            display: flex;
+            gap: 10px;
+            margin: 20px 0; /* Tambahkan margin untuk jarak */
+           
+        }
+        .hero-images img {
+            width: 90px;
+            height: 70px;
+            object-fit: contain;
+        }
+        
+          /* Reset style untuk body */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling untuk video background */
+#background-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    background-size: cover;
+}
+
+/* Overlay untuk teks di atas video */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* efek gelap di atas video */
+    z-index: 1;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+p {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+    </style>
+</head>
+<body>
+  
+    <!-- Menambahkan video background -->
+    <video autoplay muted loop id="background-video">
+        <source src="background/video.mp4" type="video/mp4">
+        Browser Anda tidak mendukung video.
+    </video>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="latar belakang.html">Latar Belakang</a>
+        <a href="tujuan1.html">Tujuan</a>
+        <a href="pelaksanaan.html">Pelaksanaan</a>
+        <a href="hasil.html">Hasil</a>
+        <a href="dampak.html">Dampak</a>
+        <a href="tokoh.html">Tokoh</a>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Selamat Datang di Halaman Kami</h1> <!-- Posisikan di bagian atas hero section -->
+        
+        <!-- Container untuk Gambar Sejarah -->
+        <div class="hero-images">
+            <img src="logo/S.jpg" alt="S">
+            <img src="logo/E.jpg" alt="E">
+            <img src="logo/J.jpg" alt="J">
+            <img src="logo/A.jpg" alt="A">
+            <img src="logo/R.jpg" alt="R">
+            <img src="logo/A.jpg" alt="A">
+            <img src="logo/H.jpg" alt="H">
+        </div>
+
+        <p>Mari Ikuti Penjelajahan Sejarah Pada Web Kami</p>
+        
+    </div>
+
+</body>
+</html>

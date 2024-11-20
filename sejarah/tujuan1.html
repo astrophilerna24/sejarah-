@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tujuan Kami</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #2C3E50;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    h2 {
+      font-size: 28px;
+      color: black;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .goals-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      width: 90%;
+      max-width: 1200px;
+    }
+
+    .goal-card {
+      background-color: #fff;
+      width: 280px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .goal-card:hover {
+      transform: scale(1.05);
+    }
+
+    .goal-image {
+      width: 100%;
+      max-width: 120px;
+      height: auto;
+      margin: 10px auto;
+      border-radius: 8px;
+    }
+
+    .goal-title {
+      font-size: 22px;
+      font-weight: bold;
+      color: #333;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .goal-description {
+      font-size: 16px;
+      color: #555;
+    }
+
+    @media (max-width: 600px) {
+      .goal-card {
+        width: 100%;
+      }
+    }
+    
+    /* Button Styling */
+    .button-container {
+      display: flex;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 24px;
+      font-size: 1rem;
+      color: #fff;
+      background-color: #3498DB;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .button:hover {
+      background-color: #1A73E8;
+      transform: scale(1.05);
+    }
+
+    .button:active {
+      background-color: #0056b3;
+    }
+    
+    /* Styling untuk video background */
+#background-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    background-size: cover;
+}
+
+/* Overlay untuk teks di atas video */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* efek gelap di atas video */
+    z-index: 1;
+}
+  </style>
+</head>
+<body>
+  
+    <!-- Menambahkan video background -->
+    <video autoplay muted loop id="background-video">
+        <source src="background/video.mp4" type="video/mp4">
+        Browser Anda tidak mendukung video.
+    </video>
+
+  <h2>Tujuan Kami</h2>
+
+  <div class="goals-container">
+    <!-- Kartu Tujuan 1 -->
+    <div class="goal-card">
+      <img src="logo/1.png" class="goal-image" alt="Conference">
+      <div class="goal-title"> Demokratisasi Sistem Politik
+</div>
+      <p class="goal-description">Masyarakat Indonesia ingin mengakhiri rezim Orde Baru yang otoriter dan mengganti sistem politik dengan yang lebih inklusif dan responsif terhadap kebutuhan rakyat.
+.</p>
+    </div>
+
+    <!-- Kartu Tujuan 2 -->
+    <div class="goal-card">
+      <img src="logo/2.png" class="goal-image" alt="Solidarity">
+      <div class="goal-title"> Penghapusan Korupsi, Kolusi, dan Nepotisme (KKN)</div>
+      <p class="goal-description"> Gerakan reformasi ini juga bertujuan untuk menghapus praktik korupsi dan nepotisme yang telah merajalela di kalangan pemerintahan, serta membangun sistem yang transparan dan akuntabel.</p>
+    </div>
+
+    <!-- Kartu Tujuan 3 -->
+    <div class="goal-card">
+      <img src="logo/3.png" class="goal-image" alt="Education">
+      <div class="goal-title">Perlindungan Hak Asasi Manusia</div>
+      <p class="goal-description"> Masyarakat Indonesia ingin memastikan bahwa hak-hak dasar setiap individu dihormati dan dilindungi oleh negara. Hal ini termasuk penuntasan kasus pelanggaran hak asasi manusia yang terjadi selama periode Orde Baru.</p>
+    </div>
+
+    <!-- Kartu Tujuan 4 -->
+    <div class="goal-card">
+      <img src="logo/4.png" class="goal-image" alt="Helping">
+      <div class="goal-title">Suksesi Kepemimpinan Nasional</div>
+      <p class="goal-description"> Masyarakat menuntut agar dilakukan suksesi kepemimpinan nasional yang sesuai dengan asas demokrasi, yaitu penguduran diri Presiden Soeharto dan penggantian dengan pemimpin baru yang lebih demokratis..</p>
+    </div>
+
+    <!-- Kartu Tujuan 5 -->
+    <div class="goal-card">
+      <img src="logo/1.png" class="goal-image" alt="Environment">
+      <div class="goal-title">Penyampaian Tuntutan Rakyat</div>
+      <p class="goal-description">Peristiwa Mei 1998 merupakan manifestasi tuntutan rakyat yang marah karena krisis ekonomi, politis, hukum, dan sosial yang dialami selama era Orde Baru. Masyarakat menuntut perubahan yang lebih baik dalam kehidupan bermasyarakat, berbangsa, dan bernegara.</p>
+    </div>
+  </div>
+  
+
+  <div class="button-container">
+    <a href="latar belakang.html" class="button">Kembali</a>
+    <a href="pelaksanaan.html" class="button">Selanjutnya</a>
+  </div>
+
+</body>
+</html>
